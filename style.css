@@ -1,0 +1,189 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+#nav-links {
+  list-style: none;
+  display: flex;
+}
+#nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+#nav-links a {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+#nav-links a:hover {
+  background-color: #555;
+}
+/* Dropdown Menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu li {
+  padding: 10px;
+}
+.dropdown-menu a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+}
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+/* Hamburger menu for mobile */
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+#hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Banner Section */
+#home-banner {
+  background: url('banner-image.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+#home-banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#home-banner p {
+  font-size: 20px;
+}
+
+/* Property Cards */
+#properties {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.property-card {
+  width: 45%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.property-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.property-card h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.property-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Hamburger menu for mobile */
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+#hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  #nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+  }
+  #nav-links li {
+      margin: 20px 0;
+  }
+  #hamburger {
+      display: block;
+  }
+  #nav-links.active {
+      display: block;
+  }
+
+  /* Mobile dropdown */
+  .dropdown {
+      position: relative;
+  }
+  .dropdown .dropdown-menu {
+      display: none;
+      position: relative;
+  }
+  .dropdown.active .dropdown-menu {
+      display: block;
+  }
+}
