@@ -36,13 +36,33 @@
         </nav>
     </header>
 
-    <section id="home-banner">
-        <h1>Find Your Dream Property with Us</h1>
-        <p>We help you find the best properties in Kuala Lumpur and Petaling Jaya.</p>
-    </section>
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slide fade" style="background-image: url('https://image-tc.galaxy.tf/wijpeg-et9pkff64e63rwptfgcvdfft6/suria-klcc_wide.jpg?crop=0%2C64%2C1230%2C692&width=1100');">
+            <!-- <div class="caption">Beautiful Property 1</div> -->
+        </div>
+        <div class="slide fade" style="background-image: url('https://www.gojira.my/wp-content/uploads/2023/08/klcc-kuala-lumpur-city-centre-1.jpg');">
+            <!-- <div class="caption">Luxury Property 2</div> -->
+        </div>
+        <div class="slide fade" style="background-image: url('https://asiantrails.b-cdn.net/wp-content/uploads/2024/05/esmonde-yong-9b08udumyy-unsplash-scaled-e1716205719309.jpg');">
+            <!-- <div class="caption">Modern Property 3</div> -->
+        </div>
+
+        <!-- Navigation Buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots -->
+    <div class="dots-container">
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+    </div>
+
 
     <section id="properties" class="container">
-        <h2>Featured Properties</h2>
+        <h2>New Property</h2>
         <div class="property-card">
             <img src="assets/images/property1.jpg" alt="Property 1">
             <h3>Luxury Apartment in KL</h3>
